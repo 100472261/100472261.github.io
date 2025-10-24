@@ -62,18 +62,6 @@ body {
   background: linear-gradient(135deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
 }
 
-@media (max-width: 640px) {
-  .profile {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .profile img {
-    width: 140px;
-    height: 140px;
-  }
-}
-
 .container hr {
   margin: 0px 25px ;
   color: white;
@@ -174,12 +162,6 @@ body {
   margin-bottom: 48px;
 }
 
-@media (max-width: 700px) {
-  .projects-grid-1 {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project-card {
   display: flex;
   flex-direction: column;
@@ -215,7 +197,6 @@ body {
   height: 24px;
   margin: 0 0 12px 0;
   font-size: 1.1rem;
-  letter-spacing: 0.05em;
   font-weight: 600;
 }
 
@@ -305,8 +286,179 @@ body {
 }
 
 .card-text {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   margin: 0px;
   color: white;
+}
+
+@media (max-width: 1480px) {
+  .project-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1425px) {
+  .project-info p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1370px) {
+  .project-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1313px) {
+  .project-info p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 1270px) {
+  .projects-grid-1{
+    grid-template-columns: 1fr;
+  }
+  .projects-grid-2{
+    grid-template-columns: 1fr;
+  }
+  .project-info p {
+    font-size: 0.95rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1083px) {
+  .profile img {
+    width: 125px;
+    height: 125px;
+  }
+  .container header h1 {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  .grid-contacto {
+    grid-template-columns: 1fr;
+  }
+  .card-text {
+    font-size: 1.1rem;
+  }
+  .card {
+    justify-content: flex-start;
+  }
+  .card-icon {
+    flex: 0 0 auto;
+    width: 56px;
+    max-width: 56px;
+    object-position: left center;
+    display: block;
+  }
+  .card-text {
+    text-align: center;
+    justify-content: center;
+    height: 24px;
+  }
+}
+
+@media (max-width: 1000px){
+  .container {
+    max-width: 65%;
+  }
+}
+
+/*@media (max-width: 910px) {
+  .container header h1 {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container header p {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .profile img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width:808px) {
+  .skills h2{
+    font-size: 1.25rem;
+  }
+  .projects h2{
+    font-size: 1.25rem;
+  }
+  #titulo-contacto {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 735px) {
+  .container {
+    max-width: 75%;
+  }
+}*/
+
+@media (max-width:705px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile img {
+    width: 140px;
+    height: 140px;
+  }
+  .skills h2{
+    font-size: 1.25rem;
+  }
+  .projects h2{
+    font-size: 1.25rem;
+  }
+  #titulo-contacto {
+    font-size: 1.25rem;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 470px){
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 390px) {
+  .project-info h2 {
+    font-size: 1.05rem;
+  }
+  .project-info p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 370px){
+  .container {
+    max-width: 100%;
+  }
 }
