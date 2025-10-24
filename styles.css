@@ -428,6 +428,9 @@ body {
     width: 140px;
     height: 140px;
   }
+  .profile p {
+    justify-content: center;
+  }
   .skills h2{
     font-size: 1.25rem;
   }
