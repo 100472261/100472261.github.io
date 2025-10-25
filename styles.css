@@ -225,7 +225,7 @@ body {
 
 .grid-contacto {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 48px;
   margin: 0px;
 }
@@ -272,7 +272,7 @@ body {
   width: 25%;
   display: block;
   object-fit: contain;
-  max-height: 56px;
+  max-height: 48px;
 }
 
 .card-text {
@@ -286,10 +286,15 @@ body {
 }
 
 .card-text {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
   margin: 0px;
   color: white;
+}
+
+#cv {
+  border: solid 2px white;
+  padding: 12px;
 }
 
 @media (max-width: 1480px) {
@@ -302,17 +307,26 @@ body {
   .project-info p {
     font-size: 0.85rem;
   }
+  .card-text {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 1370px) {
   .project-info p {
     font-size: 0.8rem;
   }
+  .card-text {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 1313px) {
   .project-info p {
     font-size: 0.75rem;
+  }
+  .card-text {
+    font-size: 0.8rem;
   }
 }
 
@@ -325,6 +339,9 @@ body {
   }
   .project-info p {
     font-size: 0.95rem;
+  }
+  .grid-contacto {
+    grid-template-columns: 1fr;
   }
   .card-text {
     font-size: 1rem;
@@ -342,18 +359,9 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .card-text {
-    font-size: 0.85rem;
-  }
 }
 
 @media (max-width: 1020px) {
-  .grid-contacto {
-    grid-template-columns: 1fr;
-  }
-  .card-text {
-    font-size: 1.1rem;
-  }
   .card {
     justify-content: flex-start;
   }
@@ -363,11 +371,6 @@ body {
     max-width: 56px;
     object-position: left center;
     display: block;
-  }
-  .card-text {
-    text-align: center;
-    justify-content: center;
-    height: 24px;
   }
 }
 
@@ -441,7 +444,7 @@ body {
     font-size: 1.25rem;
   }
   .card-text {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
 
