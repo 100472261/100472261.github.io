@@ -306,40 +306,25 @@ body {
   padding: 12px;
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 1620px) {
   .project-info p {
     font-size: 0.9rem;
   }
 }
 
-@media (max-width: 1425px) {
-  .project-info p {
-    font-size: 0.85rem;
-  }
-  .card-text {
-    font-size: 0.95rem;
-  }
-}
-
-@media (max-width: 1370px) {
+@media (max-width: 1556px) {
   .project-info p {
     font-size: 0.8rem;
   }
-  .card-text {
-    font-size: 0.9rem;
-  }
 }
 
-@media (max-width: 1313px) {
+@media (max-width: 1430px) {
   .project-info p {
-    font-size: 0.75rem;
-  }
-  .card-text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
 }
 
-@media (max-width: 1270px) {
+@media (max-width: 1314px) {
   .projects-grid-1{
     grid-template-columns: 1fr;
   }
@@ -460,6 +445,12 @@ body {
   }
 }
 
+@media (max-width: 517px) {
+  .project-info p {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 470px){
   .container {
     max-width: 95%;
@@ -470,12 +461,9 @@ body {
   .project-info h2 {
     font-size: 1.05rem;
   }
-  .project-info p {
-    font-size: 0.8rem;
-  }
 }
 
-@media (max-width:371px){
+@media (max-width:388px){
   .skills h2{
     font-size: 1.1rem;
   }
@@ -485,10 +473,7 @@ body {
   #titulo-contacto {
     font-size: 1.1rem;
   }
-}
-
-@media (max-width:358px){
   .project-info p {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
   }
 }
