@@ -466,7 +466,7 @@ body {
 
 @media (max-width: 517px) {
   .project-info p {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 
@@ -476,9 +476,12 @@ body {
   }
 }
 
-@media (max-width: 402px) {
+@media (max-width: 405px) {
   .project-info h2 {
     font-size: 1.05rem;
+  }
+  .project-info p {
+    font-size: 0.8rem;
   }
 }
 
@@ -486,13 +489,16 @@ body {
   .skills h2{
     font-size: 1.1rem;
   }
-  .projects h2{
+  #titulo-proyectos {
+    font-size: 1.1rem;
+  }
+  #titulo-otros-proyectos {
     font-size: 1.1rem;
   }
   #titulo-contacto {
     font-size: 1.1rem;
   }
   .project-info p {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 }
