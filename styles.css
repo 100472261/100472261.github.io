@@ -198,6 +198,7 @@ body {
   margin: 0 0 12px 0;
   font-size: 1.1rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .project-info p {
