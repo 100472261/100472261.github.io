@@ -1,92 +1,188 @@
 <!doctype html>
 <html lang="es">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio Jesús Mª Llanes</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jesús Mª Llanes · Ingeniero Informático</title>
+  <meta name="description" content="Portfolio de Jesús Mª Llanes, Ingeniero Informático especializado en Data Science e Inteligencia Artificial." />
+  <meta name="theme-color" content="#0E1419" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-   <div class="container">
-    <div class="profile">
-      <img src="images/Foto-Perfil-v2.jpg" alt="Foto de perfil" />
-      <header>
-        <h1>Jesús Mª Llanes</h1>
-        <p>💻 Ingeniero Informático</p>
-      </header>
+  <!--
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#inicio" aria-label="Inicio">
+        <img src="images/Foto-Perfil-v2.jpg" alt="Logo de Jesús Mª Llanes" height="36" />
+      </a>
+      <nav class="nav-links" aria-label="Navegación principal">
+        <a href="#skills">Stack</a>
+        <a href="#proyectos">Portfolio</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>🧠 Skills:</h2>
-      <div class="skills-carousel" aria-label="Tecnologías (marquee)">
-        <div class="skills-inner">
-          <a href="https://skillicons.dev">
-            <img class="skills-strip" draggable="false" loading="eager" decoding="async"
-              src="https://skillicons.dev/icons?i=windows,linux,py,c,cpp,html,css,js,pytorch,sklearn,tensorflow,cassandra,mongodb,postgres,fastapi,git,github,gitlab,docker,pycharm,vscode&perline=21" alt="My Skills">
+  </header>
+-->
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <img class="hero-photo" src="images/Foto-Perfil-v2.jpg" alt="Foto de perfil de Jesús Mª Llanes" width="180" height="180" />
+      <div class="hero-text">
+        <span class="badge"><span class="dot"></span>Abierto a nuevas oportunidades</span>
+        <h1>Jesús Mª Llanes</h1>
+        <p class="hero-role">Ingeniero Informático / <span class="accent">AI Engineer @ Deloitte</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="files/CV.pdf" download="CV.pdf">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14" /></svg>
+            Descargar CV
           </a>
-          <a href="https://skillicons.dev">
-            <img class="skills-strip" draggable="false" loading="eager" decoding="async"
-              src="https://skillicons.dev/icons?i=windows,linux,py,c,cpp,html,css,js,pytorch,sklearn,tensorflow,cassandra,mongodb,postgres,fastapi,github,gitlab,docker,pycharm,vscode&perline=21" alt="My Skills">
-          </a>
+          <!-- <a class="btn btn-ghost" href="#contacto">Contactar</a> -->
         </div>
       </div>
-    </div>
-    <hr>
-    <div class="projects">
-      <h2 id="titulo-proyectos">🤖 Proyectos Data Science - IA:</h2>
-      <div class="projects-grid-1">
-        <a class="project-card" href="https://github.com/100472261/TFG" target="_blank">
-          <img src="images/tfg.jpg" alt="Proyecto 1" />
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head">
+        <span class="eyebrow">Stack</span>
+        <h2>Tecnologías</h2>
+      </div>
+
+      <div class="marquee" aria-label="Tecnologías que conozco">
+        <ul class="marquee-track">
+          <!--<li><img src="images/skills/windows.svg" alt="" width="40" height="40" />Windows</li>-->
+          <!--<li><img src="images/skills/linux.svg" alt="" width="40" height="40" />Linux</li>-->
+          <li><img src="images/skills/py.svg" alt="" width="40" height="40" />Python</li>
+          <li><img src="images/skills/sql.svg" alt="" width="40" height="40" />SQL</li>
+          <li><img src="images/skills/c.svg" alt="" width="40" height="40" />C</li>
+          <!--<li><img src="images/skills/cpp.svg" alt="" width="40" height="40" />C++</li>-->
+          <li><img src="images/skills/html.svg" alt="" width="40" height="40" />HTML</li>
+          <li><img src="images/skills/css.svg" alt="" width="40" height="40" />CSS</li>
+          <li><img src="images/skills/js.svg" alt="" width="40" height="40" />JavaScript</li>
+          <li><img src="images/skills/pytorch.svg" alt="" width="40" height="40" />PyTorch</li>
+          <li><img src="images/skills/tensorflow.svg" alt="" width="40" height="40" />TensorFlow</li>
+          <!--<li><img src="images/skills/keras.svg" alt="" width="40" height="40" />Keras</li>-->
+          <li><img src="images/skills/sklearn.svg" alt="" width="40" height="40" />Scikit-learn</li>
+          <!--<li><img src="images/skills/prompt.svg" alt="" width="40" height="40" />Prompt Engineering</li>-->
+          <li><img src="images/skills/docker.svg" alt="" width="40" height="40" />Docker</li>
+          <li><img src="images/skills/fastapi.svg" alt="" width="40" height="40" />FastAPI</li>
+          <li><img src="images/skills/git.svg" alt="" width="40" height="40" />Git</li>
+          <li><img src="images/skills/github.svg" alt="" width="40" height="40" />GitHub</li>
+          <li><img src="images/skills/gitlab.svg" alt="" width="40" height="40" />GitLab</li>
+          <!--<li><img src="images/skills/pandas.svg" alt="" width="40" height="40" />Pandas</li>-->
+          <!--<li><img src="images/skills/numpy.svg" alt="" width="40" height="40" />NumPy</li>-->
+          <!--<li><img src="images/skills/powerbi.svg" alt="" width="40" height="40" />Power BI</li>-->
+          <!--<li><img src="images/skills/tableau.svg" alt="" width="40" height="40" />Tableau</li>-->
+          <!--<li><img src="images/skills/matplotlib.svg" alt="" width="40" height="40" />Matplotlib</li>-->
+          <!--<li><img src="images/skills/excel.svg" alt="" width="40" height="40" />Excel</li>-->
+          <li><img src="images/skills/celonis.svg" alt="" width="40" height="40" />Celonis</li>
+          <li><img src="images/skills/cassandra.svg" alt="" width="40" height="40" />Cassandra</li>
+          <li><img src="images/skills/postgres.svg" alt="" width="40" height="40" />PostgreSQL</li>
+          <li><img src="images/skills/mongodb.svg" alt="" width="40" height="40" />MongoDB</li>
+        </ul>
+        <!-- Copia idéntica para que el bucle sea continuo -->
+        <ul class="marquee-track">
+          <!--<li><img src="images/skills/windows.svg" alt="" width="40" height="40" />Windows</li>-->
+          <!--<li><img src="images/skills/linux.svg" alt="" width="40" height="40" />Linux</li>-->
+          <li><img src="images/skills/py.svg" alt="" width="40" height="40" />Python</li>
+          <li><img src="images/skills/sql.svg" alt="" width="40" height="40" />SQL</li>
+          <li><img src="images/skills/c.svg" alt="" width="40" height="40" />C</li>
+          <!--<li><img src="images/skills/cpp.svg" alt="" width="40" height="40" />C++</li>-->
+          <li><img src="images/skills/html.svg" alt="" width="40" height="40" />HTML</li>
+          <li><img src="images/skills/css.svg" alt="" width="40" height="40" />CSS</li>
+          <li><img src="images/skills/js.svg" alt="" width="40" height="40" />JavaScript</li>
+          <li><img src="images/skills/pytorch.svg" alt="" width="40" height="40" />PyTorch</li>
+          <li><img src="images/skills/tensorflow.svg" alt="" width="40" height="40" />TensorFlow</li>
+          <!--<li><img src="images/skills/keras.svg" alt="" width="40" height="40" />Keras</li>-->
+          <li><img src="images/skills/sklearn.svg" alt="" width="40" height="40" />Scikit-learn</li>
+          <!--<li><img src="images/skills/prompt.svg" alt="" width="40" height="40" />Prompt Engineering</li>-->
+          <li><img src="images/skills/docker.svg" alt="" width="40" height="40" />Docker</li>
+          <li><img src="images/skills/fastapi.svg" alt="" width="40" height="40" />FastAPI</li>
+          <li><img src="images/skills/git.svg" alt="" width="40" height="40" />Git</li>
+          <li><img src="images/skills/github.svg" alt="" width="40" height="40" />GitHub</li>
+          <li><img src="images/skills/gitlab.svg" alt="" width="40" height="40" />GitLab</li>
+          <!--<li><img src="images/skills/pandas.svg" alt="" width="40" height="40" />Pandas</li>-->
+          <!--<li><img src="images/skills/numpy.svg" alt="" width="40" height="40" />NumPy</li>-->
+          <!--<li><img src="images/skills/powerbi.svg" alt="" width="40" height="40" />Power BI</li>-->
+          <!--<li><img src="images/skills/tableau.svg" alt="" width="40" height="40" />Tableau</li>-->
+          <!--<li><img src="images/skills/matplotlib.svg" alt="" width="40" height="40" />Matplotlib</li>-->
+          <!--<li><img src="images/skills/excel.svg" alt="" width="40" height="40" />Excel</li>-->
+          <li><img src="images/skills/celonis.svg" alt="" width="40" height="40" />Celonis</li>
+          <li><img src="images/skills/cassandra.svg" alt="" width="40" height="40" />Cassandra</li>
+          <li><img src="images/skills/postgres.svg" alt="" width="40" height="40" />PostgreSQL</li>
+          <li><img src="images/skills/mongodb.svg" alt="" width="40" height="40" />MongoDB</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROYECTOS DATA / IA -->
+    <section class="section" id="proyectos">
+      <div class="section-head">
+        <span class="eyebrow">Portfolio Data Science & IA</span>
+        <h2>Proyectos</h2>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card" href="https://github.com/100472261/TFG" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/tfg.jpg" alt="TFG" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>TFG</h2>
+            <h3>TFG</h3>
             <p>Trabajo de Fin de Grado.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">TensorFlow</span>
               <span class="tech-tag">Jupyter Notebook</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-        <a class="project-card" href="https://github.com/100472261/Data-Preprocessing" target="_blank">
-          <img src="images/py.jpg" alt="Proyecto 2" />
+
+        <a class="project-card" href="https://github.com/100472261/Data-Preprocessing" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/py.jpg" alt="Data Preprocessing" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Data Preprocessing</h2>
+            <h3>Data Preprocessing</h3>
             <p>Limpieza de datos con Python.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
               <span class="tech-tag">NumPy</span>
               <span class="tech-tag">Pandas</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-      </div>
-      <div class="projects-grid-2">
-        <a class="project-card" href="https://github.com/100472261/Power-BI" target="_blank">
-          <img src="images/powerbi.jpg" alt="Proyecto 3" />
+
+        <a class="project-card" href="https://github.com/100472261/Power-BI" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/powerbi.jpg" alt="Power BI" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Power BI</h2>
+            <h3>Power BI</h3>
             <p>Reportes hechos con esta herramienta.</p>
             <div class="project-tech">
               <span class="tech-tag">Power BI</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-        <a class="project-card" href="https://github.com/100472261/Tableau" target="_blank">
-          <img src="images/tableau.jpg" alt="Proyecto 4" />
+
+        <a class="project-card" href="https://github.com/100472261/Tableau" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/tableau.jpg" alt="Tableau" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Tableau</h2>
+            <h3>Tableau</h3>
             <p>Reportes hechos con esta herramienta.</p>
             <div class="project-tech">
               <span class="tech-tag">Tableau</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-      </div>
-      <div class="projects-grid-3">
-        <a class="project-card" href="https://github.com/100472261/Weather-Data-Pipeline" target="_blank">
-          <img src="images/weather.jpg" alt="Proyecto 5" />
+
+        <a class="project-card" href="https://github.com/100472261/Weather-Data-Pipeline" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/weather.jpg" alt="Weather Data Pipeline" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Weather Data Pipeline</h2>
+            <h3>Weather Data Pipeline</h3>
             <p>Pipeline de datos end-to-end automatizado.</p>
             <div class="project-tech">
               <span class="tech-tag">Apache Airflow</span>
@@ -94,12 +190,14 @@
               <span class="tech-tag">dbt</span>
               <span class="tech-tag">Docker</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-         <a class="project-card" href="https://github.com/100472261/CRUD-Operations-FastAPI" target="_blank">
-          <img src="images/fastapi_ok.jpg" alt="Proyecto 5" />
+
+        <a class="project-card" href="https://github.com/100472261/CRUD-Operations-FastAPI" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/fastapi_ok.jpg" alt="CRUD Operations FastAPI" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>CRUD Operations FastAPI</h2>
+            <h3>CRUD Operations FastAPI</h3>
             <p>Operaciones CRUD sobre BD PostgreSQL.</p>
             <div class="project-tech">
               <span class="tech-tag">Python</span>
@@ -107,62 +205,84 @@
               <span class="tech-tag">PostgreSQL</span>
               <span class="tech-tag">Docker</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
       </div>
-    </div>
-    <hr>
-    <div class="projects">
-      <h2 id="titulo-otros-proyectos">🎓 Otros proyectos:</h2>
-      <div class="projects-grid-4">
-        <a class="project-card" href="https://github.com/100472261/Minishell" target="_blank">
-          <img src="images/C-v2.jpg" alt="Proyecto 5" />
+    </section>
+
+    <!-- OTROS PROYECTOS -->
+    <section class="section">
+      <div class="section-head">
+        <span class="eyebrow">Sistemas Operativos</span>
+        <h2>Proyectos</h2>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card" href="https://github.com/100472261/Minishell" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/C-v2.jpg" alt="Minishell" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Minishell</h2>
+            <h3>Minishell</h3>
             <p>Intérprete de mandatos.</p>
             <div class="project-tech">
               <span class="tech-tag">Linux</span>
               <span class="tech-tag">C</span>
               <span class="tech-tag">Bash</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
-        <a class="project-card" href="https://github.com/100472261/Multi-Threading" target="_blank">
-          <img src="images/C-v2.jpg" alt="Proyecto 6" />
+
+        <a class="project-card" href="https://github.com/100472261/Multi-Threading" target="_blank" rel="noopener noreferrer">
+          <div class="project-media"><img src="images/C-v2.jpg" alt="Multi-Threading" loading="lazy" width="640" height="320" /></div>
           <div class="project-info">
-            <h2>Multi - Threading</h2>
+            <h3>Multi-Threading</h3>
             <p>Programación multi-hilo.</p>
             <div class="project-tech">
               <span class="tech-tag">Linux</span>
               <span class="tech-tag">C</span>
               <span class="tech-tag">Bash</span>
             </div>
+            <span class="project-link">Ver en GitHub <span aria-hidden="true">→</span></span>
           </div>
         </a>
       </div>
-    </div>
-    <hr>
-    <div class="contacto">
-      <h2 id="titulo-contacto">📫 Contacto y CV:</h2>
-      <div class="grid-contacto">
-        <a id="linkedin" class="card" href="https://www.linkedin.com/in/jesus-maria-llanes" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-          <img class="card-icon" src="https://skillicons.dev/icons?i=linkedin&perline=1" alt="Linkedin">
-          <h2 class="card-text">LinkedIn</h2>
-        </a>
-        <a id="gmail" class="card" href="mailto:jesusmariallanes13@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Gmail">
-          <img class="card-icon" src="https://skillicons.dev/icons?i=gmail&perline=1" alt="Gmail">
-          <h2 class="card-text">Gmail</h2>
-        </a>
-        <a id="github" class="card" href="https://github.com/100472261" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <img class="card-icon" src="https://skillicons.dev/icons?i=github&perline=1" alt="GitHub">
-          <h2 class="card-text">GitHub</h2>
-        </a>
-        <a id="cv" class="card" href="files/CV.pdf" download="CV.pdf" aria-label="Descargar CV">
-          <img class="card-icon" src="images/flecha-hacia-abajo.png" alt="CV">
-          <h2 class="card-text">CV</h2>
-        </a>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="section-head">
+        <span class="eyebrow">Hablemos</span>
+        <h2>Contacto</h2>
       </div>
-    </div>
-  </div>
+
+      <div class="contact-grid">
+        <a class="contact-card" href="https://www.linkedin.com/in/jesus-maria-llanes" target="_blank" rel="noopener noreferrer">
+          <img src="images/skills/linkedin.svg" alt="" width="40" height="40" />
+          <div><strong>LinkedIn</strong></div>
+        </a>
+        <a class="contact-card" href="mailto:jesusmariallanes13@gmail.com">
+          <img src="images/skills/gmail.svg" alt="" width="40" height="40" />
+          <div><strong>Email</strong></div>
+        </a>
+        <a class="contact-card" href="https://github.com/100472261" target="_blank" rel="noopener noreferrer">
+          <img src="images/skills/github.svg" alt="" width="40" height="40" />
+          <div><strong>GitHub</strong></div>
+        </a>
+        <!--
+        <a class="contact-card" href="files/CV.pdf" download="CV.pdf">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M5 21h14" /></svg>
+          </span>
+          <div><strong>Currículum</strong><span>Descargar PDF</span></div>
+        </a>
+        -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Jesús Mª Llanes</p>
+  </footer>
 </body>
 </html>
